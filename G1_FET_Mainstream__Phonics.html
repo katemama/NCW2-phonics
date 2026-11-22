@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>康橋新竹校區 Grade 1 Intermediate and Mainstream - FET Spelling Word List（全套 15 週、150 字）</title>
+<style>
+  :root {
+    --primary: #4f46e5;
+    --primary-light: #e0e7ff;
+    --consonant-color: #1d4ed8;
+    --consonant-bg: #dbeafe;
+    --vowel-color: #c2410c;
+    --vowel-bg: #ffedd5;
+    --silent-color: #94a3b8;
+    --short-color: #0284c7;
+    --short-bg: #e0f2fe;
+    --long-color: #d97706;
+    --long-bg: #fef3c7;
+    --schwa-color: #64748b;
+    --schwa-bg: #f1f5f9;
+    --special-color: #059669;
+    --special-bg: #d1fae5;
+    --bg: #f8fafc;
+    --card-bg: #ffffff;
+    --text: #1e293b;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px 28px;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 18px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 24px 20px;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.2);
+  }
+
+  header h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.1rem;
+  }
+
+  header p {
+    margin: 0;
+    opacity: 0.95;
+    font-size: 1.1rem;
+  }
+
+  /* 週次導覽分頁 */
+  .week-nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 8px;
+    margin-bottom: 18px;
+    background: white;
+    padding: 14px 16px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1.5px solid #e2e8f0;
+  }
+
+  .week-btn {
+    padding: 9px 6px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #334155;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  .week-btn span {
+    font-size: 0.74rem;
+    font-weight: 500;
+    color: #64748b;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .week-btn:hover {
+    border-color: var(--primary);
+    background: var(--primary-light);
+  }
+
+  .week-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    box-shadow: 0 3px 10px rgba(79, 70, 229, 0.25);
+  }
+
+  .week-btn.active span {
+    color: #e0e7ff;
+  }
+
+  .unit-banner {
+    background: #eef2ff;
+    border-left: 6px solid var(--primary);
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .unit-banner h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    color: #1e1b4b;
+  }
+
+  .unit-badge {
+    background: white;
+    color: var(--primary);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: 1.5px solid #c7d2fe;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 999px;
+    background: white;
+    color: var(--text);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: all 0.2s;
+    font-size: 1.05rem;
+  }
+
+  .tab-btn.active {
+    background: #0f172a;
+    color: white;
+  }
+
+  .legend-bar {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    border: 1.5px solid #e2e8f0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dot-c {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background: var(--consonant-bg);
+    color: var(--consonant-color);
+    font-weight: 800;
+  }
+
+  .dot-v {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background: var(--vowel-bg);
+    color: var(--vowel-color);
+    font-weight: 800;
+  }
+
+  .dot-s {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background: #f1f5f9;
+    color: var(--silent-color);
+    text-decoration: line-through;
+    font-weight: 700;
+  }
+
+  .section {
+    display: none;
+  }
+
+  .section.active {
+    display: block;
+  }
+
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .filter-chip {
+    padding: 7px 16px;
+    border-radius: 20px;
+    border: 1.5px solid #cbd5e1;
+    background: white;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .filter-chip.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+
+  /* 滿版固定一行三個單字卡 */
+  .word-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+  }
+
+  .word-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    gap: 10px;
+  }
+
+  .word-title {
+    font-size: 2.75rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+  }
+
+  .syllable-stage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0 16px 0;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 2px dashed #cbd5e1;
+    min-height: 78px;
+  }
+
+  .syl-box {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid #e2e8f0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .syl-box.stressed {
+    border-bottom: 4px solid var(--primary);
+  }
+
+  .syl-box.active-speak {
+    transform: scale(1.14);
+    background: #fef08a;
+    border-color: #eab308;
+    box-shadow: 0 4px 14px rgba(234, 179, 8, 0.45);
+    z-index: 2;
+  }
+
+  .syl-sep {
+    color: #94a3b8;
+    font-weight: 800;
+    font-size: 1.4rem;
+  }
+
+  .ch {
+    font-size: 1.75rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin: 0 1.5px;
+  }
+
+  .ch-c {
+    color: var(--consonant-color);
+    background: var(--consonant-bg);
+  }
+
+  .ch-v {
+    color: var(--vowel-color);
+    background: var(--vowel-bg);
+  }
+
+  .ch-s {
+    color: var(--silent-color);
+    background: #f1f5f9;
+    text-decoration: line-through;
+  }
+
+  .ch-space {
+    padding: 0 4px;
+  }
+
+  .audio-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+  }
+
+  .audio-row {
+    display: flex;
+    gap: 6px;
+  }
+
+  .speak-btn {
+    background: var(--primary-light);
+    color: var(--primary);
+    border: none;
+    border-radius: 9px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+
+  .speak-btn:hover { background: #c7d2fe; }
+
+  .speak-btn.slow {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1.5px solid #cbd5e1;
+  }
+
+  .speak-btn.syllable-btn {
+    background: #fef3c7;
+    color: #b45309;
+    border: 1.5px solid #fde68a;
+  }
+
+  .speak-btn.syllable-btn:hover { background: #fde68a; }
+
+  .speak-btn.dl-btn {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1.5px solid #a7f3d0;
+  }
+
+  .ipa-meaning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 10px 14px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    font-size: 1.15rem;
+  }
+
+  .ipa {
+    font-family: "Lucida Sans Unicode", "Arial Unicode MS", sans-serif;
+    color: #475569;
+    font-weight: 700;
+  }
+
+  .meaning {
+    font-weight: 800;
+    color: #1e293b;
+  }
+
+  .vowel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .vowel-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05rem;
+    padding: 4px 6px;
+  }
+
+  .badge {
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .badge-short { background: var(--short-bg); color: var(--short-color); }
+  .badge-long { background: var(--long-bg); color: var(--long-color); }
+  .badge-schwa { background: var(--schwa-bg); color: var(--schwa-color); }
+  .badge-special { background: var(--special-bg); color: var(--special-color); }
+
+  /* 規則總表區 */
+  .rule-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border-left: 8px solid var(--primary);
+    font-size: 1.05rem;
+  }
+
+  .rule-card.short { border-left-color: var(--short-color); }
+  .rule-card.long { border-left-color: var(--long-color); }
+  .rule-card.schwa { border-left-color: var(--schwa-color); }
+
+  .rule-card h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+  }
+
+  .example-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .ex-chip {
+    background: #f1f5f9;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.05rem;
+    transition: all 0.15s;
+  }
+
+  .ex-chip:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+
+  /* 測驗區 */
+  .quiz-box {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .quiz-word {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 14px 0;
+    color: var(--primary);
+  }
+
+  .quiz-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .quiz-opt {
+    padding: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    background: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .quiz-opt:hover {
+    border-color: var(--primary);
+    background: #f8fafc;
+  }
+
+  .quiz-opt.correct {
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #15803d;
+  }
+
+  .quiz-opt.wrong {
+    background: #fee2e2;
+    border-color: #dc2626;
+    color: #b91c1c;
+  }
+
+  .quiz-feedback {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-height: 28px;
+  }
+
+  .next-btn {
+    margin-top: 18px;
+    padding: 12px 28px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 1100px) {
+    .week-nav { grid-template-columns: repeat(5, 1fr); }
+    .word-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 680px) {
+    body { padding: 14px; }
+    .week-nav { grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 8px; }
+    .week-btn span { display: none; }
+    .word-grid { grid-template-columns: 1fr; }
+    .quiz-options { grid-template-columns: 1fr; }
+    .word-title { font-size: 2.25rem; }
+    .ch { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>✨ 康橋新竹校區 Grade 1 Intermediate and Mainstream — FET Spelling Word List（全套 15 週、150 字）</h1>
+    <p>收錄 Week 1–7 與 Week 10–17 完整單字（Week 8 為 Review 複習週）</p>
+  </header>
+
+  <div class="week-nav" id="weekNav"></div>
+
+  <div class="unit-banner">
+    <h2 id="currentUnitTitle">Week 1：Dan and Gramps</h2>
+    <span class="unit-badge" id="currentWordCount">共 10 個單字</span>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('cards', this)">📚 本週單字發音卡</button>
+    <button class="tab-btn" onclick="switchTab('rules', this)">💡 長/短/懶人音規則表</button>
+    <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 本週聽音小測驗</button>
+  </div>
+
+  <div id="cards" class="section active">
+    <div class="legend-bar">
+      <div class="legend-item"><span class="dot-c">藍色字塊</span> = 子音 (Consonant)</div>
+      <div class="legend-item"><span class="dot-v">橘色字塊</span> = 母音 (Vowel)</div>
+      <div class="legend-item"><span class="dot-s">灰色刪除線</span> = 不發音字母 (Silent e)</div>
+      <div class="legend-item">💡 提示：也可以直接點擊單一音節方塊單獨聽音！</div>
+    </div>
+
+    <div class="filters">
+      <span style="font-weight:700; font-size:1rem;">篩選重音母音：</span>
+      <button class="filter-chip active" onclick="filterWords('all', this)">全部</button>
+      <button class="filter-chip" onclick="filterWords('short', this)">短母音為主</button>
+      <button class="filter-chip" onclick="filterWords('long', this)">長母音為主</button>
+      <button class="filter-chip" onclick="filterWords('diphthong', this)">r控制音 / 雙母音</button>
+    </div>
+    <div class="word-grid" id="wordGrid"></div>
+  </div>
+
+  <div id="rules" class="section">
+    <div class="rule-card short">
+      <h3><span class="badge badge-short">短母音 Short Vowels</span> 「前後有門關起來」</h3>
+      <p><strong>判斷口訣：</strong>一個母音被子音夾在中間（閉音節 CVC 結構），發出短促有力的聲音。</p>
+      <ul>
+        <li><strong>CVC 結構</strong>（子音 + 母音 + 子音）或單一母音 + 雙子音結尾（如 <code>nap</code>、<code>pet</code>、<code>big</code>、<code>egg</code>）。</li>
+        <li><strong>多音節單字的「重音節」</strong>裡被子音夾住時，也發短母音（如 <code>kitch-en</code>、<code>bot-tle</code>、<code>fam-i-ly</code>）。</li>
+      </ul>
+      <div>點擊單字聽超慢速發音：</div>
+      <div class="example-chips">
+        <span class="ex-chip" onclick="speak('nap', 0.4)">n<strong>a</strong>p /æ/</span>
+        <span class="ex-chip" onclick="speak('pet', 0.4)">p<strong>e</strong>t /ɛ/</span>
+        <span class="ex-chip" onclick="speak('big', 0.4)">b<strong>i</strong>g /ɪ/</span>
+        <span class="ex-chip" onclick="speak('trot', 0.4)">tr<strong>o</strong>t /ɑ/</span>
+        <span class="ex-chip" onclick="speak('sun', 0.4)">s<strong>u</strong>n /ʌ/</span>
+      </div>
+    </div>
+
+    <div class="rule-card long">
+      <h3><span class="badge badge-long">長母音 Long Vowels</span> 「大聲唸出字母原本的名字」</h3>
+      <p><strong>判斷口訣：</strong>唸出 <code>A, E, I, O, U</code> 本身的字母名字。</p>
+      <ul>
+        <li><strong>無聲 e 魔法（CVCe）</strong>：母音 + 子音 + 不發音的 <code>e</code>（如 <code>safe</code>、<code>lake</code>、<code>fine</code>、<code>nose</code>）。</li>
+        <li><strong>雙母音牽手（Vowel Teams）</strong>：兩個母音在一起，第一個唸長音、第二個不發音（如 <code>eat</code>、<code>clean</code>、<code>toast</code>、<code>pail</code>）。</li>
+        <li><strong>開音節（Open Syllable）</strong>：音節結尾直接是母音，後面沒有子音擋住（如 <code>baby</code>、<code>label</code>、<code>below</code>）。</li>
+      </ul>
+      <div>點擊單字聽超慢速發音：</div>
+      <div class="example-chips">
+        <span class="ex-chip" onclick="speak('lake', 0.4)">l<strong>a</strong>ke (CVCe 長 A)</span>
+        <span class="ex-chip" onclick="speak('clean', 0.4)">cl<strong>ea</strong>n (雙母音長 E)</span>
+        <span class="ex-chip" onclick="speak('fine', 0.4)">f<strong>i</strong>ne (CVCe 長 I)</span>
+        <span class="ex-chip" onclick="speak('toast', 0.4)">t<strong>oa</strong>st (雙母音長 O)</span>
+        <span class="ex-chip" onclick="speak('pool', 0.4)">p<strong>oo</strong>l (長音 U)</span>
+      </div>
+    </div>
+
+    <div class="rule-card schwa">
+      <h3><span class="badge badge-schwa">懶人音 Schwa /ə/</span> 「不在重音節就偷懶」</h3>
+      <p><strong>判斷口訣：</strong>多音節單字中，<strong>沒有重音</strong>的母音會弱化成又輕又短的「呃」<code>/ə/</code>。</p>
+      <ul>
+        <li><code>a, e, i, o, u</code> 五個母音只要落在輕音節，都有可能變成懶人音。</li>
+        <li>常見於字首 <code>a- / to-</code> 或字尾 <code>-tion / -ment / -ful</code>。</li>
+      </ul>
+      <div>點擊單字聽輕音節弱化：</div>
+      <div class="example-chips">
+        <span class="ex-chip" onclick="speak('away', 0.35)"><strong>a</strong>way</span>
+        <span class="ex-chip" onclick="speak('again', 0.35)"><strong>a</strong>gain</span>
+        <span class="ex-chip" onclick="speak('apartment', 0.35)"><strong>a</strong>partm<strong>e</strong>nt</span>
+        <span class="ex-chip" onclick="speak('family', 0.35)">fam<strong>i</strong>ly</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="quiz" class="section">
+    <div class="quiz-box">
+      <div style="color:#64748b; font-size:1.05rem;">
+        <span id="qWeekLabel" style="font-weight:700; color:var(--primary);">Week 1</span> ｜ 
+        第 <span id="qNum">1</span> / <span id="qTotal">10</span> 題 ｜ 得分：<span id="qScore">0</span>
+      </div>
+      <div class="quiz-word" id="qWord">sing</div>
+      <div style="display:flex; gap:10px; justify-content:center;">
+        <button class="speak-btn" onclick="speakCurrentQuiz(0.95)">🔊 正常發音</button>
+        <button class="speak-btn slow" onclick="speakCurrentQuiz(0.32)">🐢 超慢速</button>
+      </div>
+      <p id="qPrompt" style="margin-top:18px; font-weight:700; font-size:1.15rem;">請問這個單字「重音節」的母音屬於哪一種？</p>
+      <div class="quiz-options" id="qOptions"></div>
+      <div class="quiz-feedback" id="qFeedback"></div>
+      <button class="next-btn" id="nextBtn" style="display:none;" onclick="nextQuestion()">下一題 ➔</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const weeksData = [{"id": "w1", "label": "Week 1", "unit": "The Blackout", "words": [{"word": "see", "ipa": "/si/", "syllables": "<strong>see</strong>", "speakParts": ["see"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}]}], "meaning": "看見 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "quiet", "ipa": "/ˈkwaɪət/", "syllables": "<strong>qui</strong>-et", "speakParts": ["kwye", "it"], "displayParts": [{"stressed": true, "letters": [{"c": "q", "t": "c"}, {"c": "u", "t": "v"}, {"c": "i", "t": "v"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "安靜的 (adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音在第一音節 qui，i 發長母音 I /aɪ/；字尾 et 弱化為懶人音 /ə/。", "vowels": [{"letter": "u", "type": "special", "label": "半母音 /w/", "desc": "qu 組合發 /kw/"}, {"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "重音開音節長音 I"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "radio", "ipa": "/ˈredɪˌo/", "syllables": "<strong>ra</strong>-di-o", "speakParts": ["ray", "dee", "oh"], "displayParts": [{"stressed": true, "letters": [{"c": "r", "t": "c"}, {"c": "a", "t": "v"}]}, {"stressed": false, "letters": [{"c": "d", "t": "c"}, {"c": "i", "t": "v"}]}, {"stressed": false, "letters": [{"c": "o", "t": "v"}]}], "meaning": "收音機 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "主重音在第一音節 ra（開音節），a 發長母音 A /e/；字尾 o 發長音 O /o/。", "vowels": [{"letter": "a", "type": "long", "label": "長母音 A /e/", "desc": "主重音開音節長音 A"}, {"letter": "i", "type": "long", "label": "長音 /i/ (/ɪ/)", "desc": "中間音節母音"}, {"letter": "o", "type": "long", "label": "長母音 O /o/", "desc": "字尾開音節長音 O"}]}, {"word": "battery", "ipa": "/ˈbætəri/", "syllables": "<strong>bat</strong>-ter-y", "speakParts": ["bat", "uhr", "ee"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "a", "t": "v"}, {"c": "t", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "y", "t": "v"}]}], "meaning": "電池 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 bat 的 a 發短母音 /æ/；中間 er 為輕短捲舌音 /ɚ/；字尾 y 發長音 E /i/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "重音節閉音節短音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "r 控制捲舌音"}, {"letter": "y (半母音)", "type": "long", "label": "長母音 E /i/", "desc": "字尾 y 發長音 E"}]}, {"word": "boy", "ipa": "/bɔɪ/", "syllables": "<strong>boy</strong>", "speakParts": ["boy"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "o", "t": "v"}, {"c": "y", "t": "v"}]}], "meaning": "男孩 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "oy 屬於雙母音/滑音組合，發 /ɔɪ/（與 toy, joy 相同）。", "vowels": [{"letter": "oy", "type": "special", "label": "雙母音 /ɔɪ/", "desc": "滑音組合"}]}, {"word": "give", "ipa": "/gɪv/", "syllables": "<strong>give</strong>", "speakParts": ["give"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "i", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "給 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "特殊字！字尾雖有 e（避免英文單字以 v 結尾），但 i 仍發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "特殊短音（字尾 v+e 規則）"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "describe", "ipa": "/dɪˈskraɪb/", "syllables": "de-<strong>scribe</strong>", "speakParts": ["di", "skribe"], "displayParts": [{"stressed": false, "letters": [{"c": "d", "t": "c"}, {"c": "e", "t": "v"}]}, {"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "c", "t": "c"}, {"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "b", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "描述 (v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音在第二音節 scribe（CVCe 結構），字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "e (第1個)", "type": "short", "label": "短母音 /ɪ/", "desc": "字首輕音節弱化短音"}, {"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "重音 CVCe 長音 I"}, {"letter": "e (第2個)", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "check", "ipa": "/tʃɛk/", "syllables": "<strong>check</strong>", "speakParts": ["check"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "h", "t": "c"}, {"c": "e", "t": "v"}, {"c": "c", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "檢查 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，e 後面有 ck 關門，發短母音 /ɛ/；字首 ch 發 /tʃ/。", "vowels": [{"letter": "ch", "type": "special", "label": "子音 digraph /tʃ/", "desc": "子音雙字母組合，發一個獨立的 /tʃ/ 音"}, {"letter": "e", "type": "short", "label": "短母音 /ɛ/", "desc": "閉音節短音"}]}, {"word": "see", "ipa": "/si/", "syllables": "<strong>see</strong>", "speakParts": ["see"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}]}], "meaning": "看見 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "quiet", "ipa": "/ˈkwaɪət/", "syllables": "<strong>qui</strong>-et", "speakParts": ["kwye", "it"], "displayParts": [{"stressed": true, "letters": [{"c": "q", "t": "c"}, {"c": "u", "t": "v"}, {"c": "i", "t": "v"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "安靜的 (adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音在第一音節 qui，i 發長母音 I /aɪ/；字尾 et 弱化為懶人音 /ə/。", "vowels": [{"letter": "u", "type": "special", "label": "半母音 /w/", "desc": "qu 組合發 /kw/"}, {"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "重音開音節長音 I"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}]}, {"id": "w2", "label": "Week 2", "unit": "The Blackout", "words": [{"word": "storm", "ipa": "/stɔrm/", "syllables": "<strong>storm</strong>", "speakParts": ["storm"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "o", "t": "v"}, {"c": "r", "t": "c"}, {"c": "m", "t": "c"}]}], "meaning": "暴風雨 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "or 屬於 r 控制母音組合，發捲舌音 /ɔr/。", "vowels": [{"letter": "o", "type": "special", "label": "r 控制音 /ɔr/", "desc": "or 組合發捲舌音"}]}, {"word": "listen", "ipa": "/ˈlɪsṇ/", "syllables": "<strong>lis</strong>-ten", "speakParts": ["lis", "un"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "s", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "n", "t": "c"}]}], "meaning": "聽 (v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 lis 的 i 發短母音 /ɪ/；字尾 ten 中 t 不發音，e 弱化為懶人音 /ə/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "重音節閉音節短音"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "mutter", "ipa": "/ˈmʌtɚ/", "syllables": "<strong>mut</strong>-ter", "speakParts": ["mut", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "m", "t": "c"}, {"c": "u", "t": "v"}, {"c": "t", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "低語、嘀咕 (v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 mut 的 u 發短母音 /ʌ/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "u", "type": "short", "label": "短母音 /ʌ/", "desc": "重音節閉音節短音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "flashlight", "ipa": "/ˈflæʃˌlaɪt/", "syllables": "<strong>flash</strong>-light", "speakParts": ["flash", "light"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "l", "t": "c"}, {"c": "a", "t": "v"}, {"c": "s", "t": "c"}, {"c": "h", "t": "c"}]}, {"stressed": false, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}, {"c": "h", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "手電筒 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 flash 的 a 發短母音 /æ/（sh 發 /ʃ/）；light 中 igh 發長音 I /aɪ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "主重音節閉音節短音"}, {"letter": "sh", "type": "special", "label": "子音 digraph /ʃ/", "desc": "子音雙字母組合發 /ʃ/"}, {"letter": "i (igh組合)", "type": "long", "label": "長母音 I /aɪ/", "desc": "igh 組合發長音 I"}]}, {"word": "always", "ipa": "/ˈɔlwez/", "syllables": "<strong>al</strong>-ways", "speakParts": ["awl", "wayz"], "displayParts": [{"stressed": true, "letters": [{"c": "a", "t": "v"}, {"c": "l", "t": "c"}]}, {"stressed": false, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}, {"c": "y", "t": "v"}, {"c": "s", "t": "c"}]}], "meaning": "總是 (adv.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "主重音 al 的 a 受 l 影響發圓唇音 /ɔ/；ways 的 ay 發長母音 A /e/。", "vowels": [{"letter": "a", "type": "special", "label": "al 圓唇音 /ɔ/", "desc": "al 組合發 /ɔl/"}, {"letter": "ay", "type": "long", "label": "長母音 A /e/", "desc": "雙母音組合發長音 A"}]}, {"word": "give", "ipa": "/gɪv/", "syllables": "<strong>give</strong>", "speakParts": ["give"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "i", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "給 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "特殊字！字尾雖有 e（避免英文單字以 v 結尾），但 i 仍發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "特殊短音（字尾 v+e 規則）"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "park", "ipa": "/pɑrk/", "syllables": "<strong>park</strong>", "speakParts": ["park"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "公園 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ar 屬於 r 控制母音組合，發捲舌長音 /ɑr/。", "vowels": [{"letter": "a", "type": "special", "label": "r 控制音 /ɑr/", "desc": "ar 組合發捲舌音"}]}, {"word": "kid", "ipa": "/kɪd/", "syllables": "<strong>kid</strong>", "speakParts": ["kid"], "displayParts": [{"stressed": true, "letters": [{"c": "k", "t": "c"}, {"c": "i", "t": "v"}, {"c": "d", "t": "c"}]}], "meaning": "小孩 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節 CVC 結構，i 被子音夾住發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "play", "ipa": "/ple/", "syllables": "<strong>play</strong>", "speakParts": ["play"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "a", "t": "v"}, {"c": "y", "t": "v"}]}], "meaning": "玩耍 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "ay 在字尾發長母音 A /e/。", "vowels": [{"letter": "ay", "type": "long", "label": "長母音 A /e/", "desc": "字尾 ay 組合發長音 A"}]}, {"word": "people", "ipa": "/ˈpipḷ/", "syllables": "<strong>peo</strong>-ple", "speakParts": ["pee", "pul"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "e", "t": "v"}, {"c": "o", "t": "v"}]}, {"stressed": false, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "人們 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "特殊拼字！eo 組合在此發長母音 E /i/；字尾 le 成音節，e 不發音。", "vowels": [{"letter": "eo (特殊長音)", "type": "long", "label": "長母音 E /i/", "desc": "特殊拼字發長音 E"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾 le 成音節"}]}]}, {"id": "w3", "label": "Week 3", "unit": "What Is in a Neighborhood?", "words": [{"word": "house", "ipa": "/haʊs/", "syllables": "<strong>house</strong>", "speakParts": ["house"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "o", "t": "v"}, {"c": "u", "t": "v"}, {"c": "s", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "房子 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ou 發雙母音/滑音 /aʊ/；字尾 e 不發音。", "vowels": [{"letter": "ou", "type": "special", "label": "雙母音 /aʊ/", "desc": "滑音組合"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "family", "ipa": "/ˈfæməli/", "syllables": "<strong>fam</strong>-i-ly", "speakParts": ["fam", "uh", "lee"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "a", "t": "v"}, {"c": "m", "t": "c"}]}, {"stressed": false, "letters": [{"c": "i", "t": "v"}]}, {"stressed": false, "letters": [{"c": "l", "t": "c"}, {"c": "y", "t": "v"}]}], "meaning": "家庭、家人 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 fam 的 a 發短母音 /æ/；中間 i 弱化為懶人音 /ə/；字尾 y 發長音 E /i/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "重音節閉音節短音"}, {"letter": "i", "type": "schwa", "label": "懶人音 /ə/", "desc": "中間輕音節弱化"}, {"letter": "y (半母音)", "type": "long", "label": "長母音 E /i/", "desc": "字尾 y 發長音 E"}]}, {"word": "live", "ipa": "/lɪv/", "syllables": "<strong>live</strong>", "speakParts": ["live"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "居住 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "動詞「居住」時發短母音 /ɪ/（字尾 e 避免單字以 v 結尾）。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "動詞讀短音 /ɪ/"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "store", "ipa": "/stɔr/", "syllables": "<strong>store</strong>", "speakParts": ["store"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "o", "t": "v"}, {"c": "r", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "商店 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "or 屬於 r 控制母音組合，發捲舌音 /ɔr/，字尾 e 不發音。", "vowels": [{"letter": "o", "type": "special", "label": "r 控制音 /ɔr/", "desc": "or 組合發捲舌音"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "buy", "ipa": "/baɪ/", "syllables": "<strong>buy</strong>", "speakParts": ["buy"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "u", "t": "v"}, {"c": "y", "t": "v"}]}], "meaning": "買 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "uy 組合在此發長母音 I /aɪ/。", "vowels": [{"letter": "uy", "type": "long", "label": "長母音 I /aɪ/", "desc": "母音組合發長音 I"}]}, {"word": "food", "ipa": "/fud/", "syllables": "<strong>food</strong>", "speakParts": ["food"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "o", "t": "v"}, {"c": "o", "t": "v"}, {"c": "d", "t": "c"}]}], "meaning": "食物 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 oo 組合在此發長音 /u/。", "vowels": [{"letter": "oo", "type": "long", "label": "長音 /u/", "desc": "oo 長音組合"}]}, {"word": "park", "ipa": "/pɑrk/", "syllables": "<strong>park</strong>", "speakParts": ["park"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "公園 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ar 屬於 r 控制母音組合，發捲舌長音 /ɑr/。", "vowels": [{"letter": "a", "type": "special", "label": "r 控制音 /ɑr/", "desc": "ar 組合發捲舌音"}]}, {"word": "kid", "ipa": "/kɪd/", "syllables": "<strong>kid</strong>", "speakParts": ["kid"], "displayParts": [{"stressed": true, "letters": [{"c": "k", "t": "c"}, {"c": "i", "t": "v"}, {"c": "d", "t": "c"}]}], "meaning": "小孩 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節 CVC 結構，i 被子音夾住發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "play", "ipa": "/ple/", "syllables": "<strong>play</strong>", "speakParts": ["play"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "a", "t": "v"}, {"c": "y", "t": "v"}]}], "meaning": "玩耍 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "ay 在字尾發長母音 A /e/。", "vowels": [{"letter": "ay", "type": "long", "label": "長母音 A /e/", "desc": "字尾 ay 組合發長音 A"}]}, {"word": "people", "ipa": "/ˈpipḷ/", "syllables": "<strong>peo</strong>-ple", "speakParts": ["pee", "pul"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "e", "t": "v"}, {"c": "o", "t": "v"}]}, {"stressed": false, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "人們 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "特殊拼字！eo 組合在此發長母音 E /i/；字尾 le 成音節，e 不發音。", "vowels": [{"letter": "eo (特殊長音)", "type": "long", "label": "長母音 E /i/", "desc": "特殊拼字發長音 E"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾 le 成音節"}]}]}, {"id": "w4", "label": "Week 4", "unit": "Everything Goes: Henry on Wheels", "words": [{"word": "bike", "ipa": "/baɪk/", "syllables": "<strong>bike</strong>", "speakParts": ["bike"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "i", "t": "v"}, {"c": "k", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "腳踏車 (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "ride", "ipa": "/raɪd/", "syllables": "<strong>ride</strong>", "speakParts": ["ride"], "displayParts": [{"stressed": true, "letters": [{"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "d", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "騎乘 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "block", "ipa": "/blɑk/", "syllables": "<strong>block</strong>", "speakParts": ["block"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "l", "t": "c"}, {"c": "o", "t": "v"}, {"c": "c", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "街區、積木 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，o 後面有 ck 關門，發短母音 /ɑ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɑ/", "desc": "閉音節短音"}]}, {"word": "girl", "ipa": "/gɝl/", "syllables": "<strong>girl</strong>", "speakParts": ["girl"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "i", "t": "v"}, {"c": "r", "t": "c"}, {"c": "l", "t": "c"}]}], "meaning": "女孩 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ir 屬於 r 控制母音組合，發捲舌音 /ɝ/。", "vowels": [{"letter": "i", "type": "special", "label": "r 控制音 /ɝ/", "desc": "ir 組合發捲舌音"}]}, {"word": "corner", "ipa": "/ˈkɔrnɚ/", "syllables": "<strong>cor</strong>-ner", "speakParts": ["kor", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "o", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "n", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "角落 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "重音節 cor 中，or 為 r 控制音 /ɔr/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "o", "type": "special", "label": "r 控制音 /ɔr/", "desc": "重音節 or 發捲舌音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "shovel", "ipa": "/ˈʃʌvḷ/", "syllables": "<strong>shov</strong>-el", "speakParts": ["shuv", "ul"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "h", "t": "c"}, {"c": "o", "t": "v"}, {"c": "v", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "l", "t": "c"}]}], "meaning": "鏟子 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 shov 的 o 發短母音 U /ʌ/；字首 sh 發 /ʃ/；字尾 el 弱化為懶人音 /ə/。", "vowels": [{"letter": "sh", "type": "special", "label": "子音 digraph /ʃ/", "desc": "子音雙字母組合發 /ʃ/"}, {"letter": "o (特殊短音)", "type": "short", "label": "短音 /ʌ/", "desc": "特殊拼字發短音 U"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "gravel", "ipa": "/ˈgrævḷ/", "syllables": "<strong>grav</strong>-el", "speakParts": ["grav", "ul"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "r", "t": "c"}, {"c": "a", "t": "v"}, {"c": "v", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "l", "t": "c"}]}], "meaning": "碎石、礫石 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 grav 的 a 發短母音 /æ/；字尾 el 弱化為懶人音 /ə/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "重音節閉音節短音"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "pour", "ipa": "/pɔr/", "syllables": "<strong>pour</strong>", "speakParts": ["pour"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "o", "t": "v"}, {"c": "u", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "倒、傾注 (v.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "our 組合在此發 r 控制捲舌音 /ɔr/（與 four 同音）。", "vowels": [{"letter": "ou", "type": "special", "label": "r 控制音 /ɔr/", "desc": "our 組合發捲舌音"}]}, {"word": "stop", "ipa": "/stɑp/", "syllables": "<strong>stop</strong>", "speakParts": ["stop"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "o", "t": "v"}, {"c": "p", "t": "c"}]}], "meaning": "停止 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，o 被子音夾住發短母音 /ɑ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɑ/", "desc": "閉音節短音"}]}, {"word": "street", "ipa": "/strit/", "syllables": "<strong>street</strong>", "speakParts": ["street"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "r", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "街道 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}]}, {"id": "w5", "label": "Week 5", "unit": "Everything Goes: Henry on Wheels", "words": [{"word": "swing", "ipa": "/swɪŋ/", "syllables": "<strong>swing</strong>", "speakParts": ["swing"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "w", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "g", "t": "c"}]}], "meaning": "盪鞦韆、搖擺 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，i 發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "sand", "ipa": "/sænd/", "syllables": "<strong>sand</strong>", "speakParts": ["sand"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "a", "t": "v"}, {"c": "n", "t": "c"}, {"c": "d", "t": "c"}]}], "meaning": "沙、沙子 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，a 發短母音 /æ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "閉音節短音"}]}, {"word": "bulldozer", "ipa": "/ˈbʊlˌdozɚ/", "syllables": "<strong>bull</strong>-doz-er", "speakParts": ["bool", "dohz", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "u", "t": "v"}, {"c": "l", "t": "c"}, {"c": "l", "t": "c"}]}, {"stressed": false, "letters": [{"c": "d", "t": "c"}, {"c": "o", "t": "v"}, {"c": "z", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "推土機 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 bull 的 u 發短音 /ʊ/；doz 的 o 發長音 O /o/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "u", "type": "short", "label": "短音 /ʊ/", "desc": "主重音節短音"}, {"letter": "o", "type": "long", "label": "長母音 O /o/", "desc": "次重音長音 O"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "dirt", "ipa": "/dɝt/", "syllables": "<strong>dirt</strong>", "speakParts": ["dirt"], "displayParts": [{"stressed": true, "letters": [{"c": "d", "t": "c"}, {"c": "i", "t": "v"}, {"c": "r", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "泥土、灰塵 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ir 屬於 r 控制母音組合，發捲舌音 /ɝ/。", "vowels": [{"letter": "i", "type": "special", "label": "r 控制音 /ɝ/", "desc": "ir 組合發捲舌音"}]}, {"word": "truck", "ipa": "/trʌk/", "syllables": "<strong>truck</strong>", "speakParts": ["truck"], "displayParts": [{"stressed": true, "letters": [{"c": "t", "t": "c"}, {"c": "r", "t": "c"}, {"c": "u", "t": "v"}, {"c": "c", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "卡車 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，u 後面有 ck 關門，發短母音 /ʌ/。", "vowels": [{"letter": "u", "type": "short", "label": "短母音 /ʌ/", "desc": "閉音節短音"}]}, {"word": "drive", "ipa": "/draɪv/", "syllables": "<strong>drive</strong>", "speakParts": ["drive"], "displayParts": [{"stressed": true, "letters": [{"c": "d", "t": "c"}, {"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "駕駛、開車 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "crane", "ipa": "/kren/", "syllables": "<strong>crane</strong>", "speakParts": ["crane"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "r", "t": "c"}, {"c": "a", "t": "v"}, {"c": "n", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "起重機、吊車 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 a 發長母音 A /e/。", "vowels": [{"letter": "a", "type": "long", "label": "長母音 A /e/", "desc": "無聲 e 魔法發長音 A"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "barrel", "ipa": "/ˈbærəl/", "syllables": "<strong>bar</strong>-rel", "speakParts": ["bar", "ul"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "r", "t": "c"}, {"c": "e", "t": "v"}, {"c": "l", "t": "c"}]}], "meaning": "木桶、圓桶 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 bar 的 a 發短母音 /æ/；字尾 rel 弱化為懶人音 /ə/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "重音節短音"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "ride", "ipa": "/raɪd/", "syllables": "<strong>ride</strong>", "speakParts": ["ride"], "displayParts": [{"stressed": true, "letters": [{"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "d", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "騎乘 (v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "bike", "ipa": "/baɪk/", "syllables": "<strong>bike</strong>", "speakParts": ["bike"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "i", "t": "v"}, {"c": "k", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "腳踏車 (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}]}, {"id": "w6", "label": "Week 6", "unit": "Look Both Ways", "words": [{"word": "safe", "ipa": "/sef/", "syllables": "<strong>safe</strong>", "speakParts": ["safe"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "a", "t": "v"}, {"c": "f", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "安全的 (*adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 a 發長母音 A /e/。", "vowels": [{"letter": "a", "type": "long", "label": "長母音 A /e/", "desc": "無聲 e 魔法發長音 A"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "street", "ipa": "/strit/", "syllables": "<strong>street</strong>", "speakParts": ["street"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "r", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "街道 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "look", "ipa": "/lʊk/", "syllables": "<strong>look</strong>", "speakParts": ["look"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "o", "t": "v"}, {"c": "o", "t": "v"}, {"c": "k", "t": "c"}]}], "meaning": "看 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "oo 在 k 前通常發短音 /ʊ/（與 book, cook 相同）。", "vowels": [{"letter": "oo", "type": "short", "label": "短音 /ʊ/", "desc": "oo 短音組合"}]}, {"word": "guard", "ipa": "/gɑrd/", "syllables": "<strong>guard</strong>", "speakParts": ["guard"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "u", "t": "v"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "d", "t": "c"}]}], "meaning": "警衛、守衛 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "gu 組合中 u 不發音，ar 為 r 控制母音組合發捲舌長音 /ɑr/。", "vowels": [{"letter": "u", "type": "schwa", "label": "不發音", "desc": "gu 組合中 u 不發音"}, {"letter": "a", "type": "special", "label": "r 控制音 /ɑr/", "desc": "ar 組合發捲舌音"}]}, {"word": "line", "ipa": "/laɪn/", "syllables": "<strong>line</strong>", "speakParts": ["line"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "線、排隊 (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "picture", "ipa": "/ˈpɪktʃɚ/", "syllables": "<strong>pic</strong>-ture", "speakParts": ["pik", "cher"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "i", "t": "v"}, {"c": "c", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "u", "t": "v"}, {"c": "r", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "圖片、照片 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 pic 的 i 發短母音 /ɪ/；字尾 -ture 弱化為 /tʃɚ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "重音節閉音節短音"}, {"letter": "u / e", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 -ture 音節"}]}, {"word": "traffic", "ipa": "/ˈtræfɪk/", "syllables": "<strong>traf</strong>-fic", "speakParts": ["traf", "ik"], "displayParts": [{"stressed": true, "letters": [{"c": "t", "t": "c"}, {"c": "r", "t": "c"}, {"c": "a", "t": "v"}, {"c": "f", "t": "c"}]}, {"stressed": false, "letters": [{"c": "f", "t": "c"}, {"c": "i", "t": "v"}, {"c": "c", "t": "c"}]}], "meaning": "交通 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 traf 的 a 發短母音 /æ/；字尾 fic 的 i 發短母音 /ɪ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "重音節閉音節短音"}, {"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "輕音節閉音節短音"}]}, {"word": "left", "ipa": "/lɛft/", "syllables": "<strong>left</strong>", "speakParts": ["left"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "e", "t": "v"}, {"c": "f", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "左邊的 (*adj.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，e 發短母音 /ɛ/。", "vowels": [{"letter": "e", "type": "short", "label": "短母音 /ɛ/", "desc": "閉音節短音"}]}, {"word": "right", "ipa": "/raɪt/", "syllables": "<strong>right</strong>", "speakParts": ["right"], "displayParts": [{"stressed": true, "letters": [{"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}, {"c": "h", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "右邊的、正確的 (*adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "igh 組合中 gh 不發音，i 發長母音 I /aɪ/。", "vowels": [{"letter": "i (igh組合)", "type": "long", "label": "長母音 I /aɪ/", "desc": "igh 組合發長音 I"}]}, {"word": "crosswalk", "ipa": "/ˈkrɔsˌwɔk/", "syllables": "<strong>cross</strong>-walk", "speakParts": ["kraws", "wawk"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "r", "t": "c"}, {"c": "o", "t": "v"}, {"c": "s", "t": "c"}, {"c": "s", "t": "c"}]}, {"stressed": false, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}, {"c": "l", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "行人穿越道、斑馬線 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 cross 的 o 發短音 /ɔ/；walk 的 al 組合發圓唇音 /ɔ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɔ/", "desc": "主重音節短音 O 家族"}, {"letter": "a", "type": "special", "label": "al 圓唇音 /ɔ/", "desc": "al 組合發 /ɔ/"}]}]}, {"id": "w7", "label": "Week 7", "unit": "Look Both Ways", "words": [{"word": "walk", "ipa": "/wɔk/", "syllables": "<strong>walk</strong>", "speakParts": ["walk"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}, {"c": "l", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "走路 (*v.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "al 組合在字中常發圓唇音 /ɔ/，l 不發音。", "vowels": [{"letter": "a", "type": "special", "label": "al 圓唇音 /ɔ/", "desc": "al 組合發圓唇音 /ɔ/"}]}, {"word": "wait", "ipa": "/wet/", "syllables": "<strong>wait</strong>", "speakParts": ["wait"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}, {"c": "i", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "等待 (v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音組合 ai 牽手，第一個母音 a 發長母音 A /e/，i 不發音。", "vowels": [{"letter": "ai", "type": "long", "label": "長母音 A /e/", "desc": "雙母音組合發長音 A"}]}, {"word": "tell", "ipa": "/tɛl/", "syllables": "<strong>tell</strong>", "speakParts": ["tell"], "displayParts": [{"stressed": true, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "l", "t": "c"}, {"c": "l", "t": "c"}]}], "meaning": "告訴 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，e 後面有雙子音 ll，發短母音 /ɛ/。", "vowels": [{"letter": "e", "type": "short", "label": "短母音 /ɛ/", "desc": "閉音節短音"}]}, {"word": "place", "ipa": "/ples/", "syllables": "<strong>place</strong>", "speakParts": ["place"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "a", "t": "v"}, {"c": "c", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "地方 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 a 發長母音 A /e/ 且 c 軟化為 /s/。", "vowels": [{"letter": "a", "type": "long", "label": "長母音 A /e/", "desc": "無聲 e 魔法發長音 A"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "person", "ipa": "/ˈpɝsṇ/", "syllables": "<strong>per</strong>-son", "speakParts": ["per", "sun"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "s", "t": "c"}, {"c": "o", "t": "v"}, {"c": "n", "t": "c"}]}], "meaning": "人 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "重音節 per 中，er 為 r 控制音 /ɝ/；字尾 son 弱化為懶人音 /ə/。", "vowels": [{"letter": "er", "type": "special", "label": "r 控制音 /ɝ/", "desc": "重音節 er 發捲舌音"}, {"letter": "o", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "stop", "ipa": "/stɑp/", "syllables": "<strong>stop</strong>", "speakParts": ["stop"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "o", "t": "v"}, {"c": "p", "t": "c"}]}], "meaning": "停止 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，o 被子音夾住發短母音 /ɑ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɑ/", "desc": "閉音節短音"}]}, {"word": "both", "ipa": "/boθ/", "syllables": "<strong>both</strong>", "speakParts": ["both"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "o", "t": "v"}, {"c": "t", "t": "c"}, {"c": "h", "t": "c"}]}], "meaning": "兩者都 (adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "o 在 th 前發長母音 O /o/；字尾 th 為無聲子音 digraph 發 /θ/。", "vowels": [{"letter": "o", "type": "long", "label": "長母音 O /o/", "desc": "長音 O"}, {"letter": "th", "type": "special", "label": "子音 digraph /θ/", "desc": "無聲 th 咬舌音"}]}, {"word": "signal", "ipa": "/ˈsɪgnḷ/", "syllables": "<strong>sig</strong>-nal", "speakParts": ["sig", "nul"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}]}, {"stressed": false, "letters": [{"c": "n", "t": "c"}, {"c": "a", "t": "v"}, {"c": "l", "t": "c"}]}], "meaning": "號誌、信號 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 sig 的 i 發短母音 /ɪ/；字尾 nal 弱化為懶人音 /ə/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "重音節閉音節短音"}, {"letter": "a", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "safe", "ipa": "/sef/", "syllables": "<strong>safe</strong>", "speakParts": ["safe"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "a", "t": "v"}, {"c": "f", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "安全的 (*adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 a 發長母音 A /e/。", "vowels": [{"letter": "a", "type": "long", "label": "長母音 A /e/", "desc": "無聲 e 魔法發長音 A"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "line", "ipa": "/laɪn/", "syllables": "<strong>line</strong>", "speakParts": ["line"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "線、排隊 (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 i 發長母音 I /aɪ/。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "無聲 e 魔法發長音 I"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}]}, {"id": "w10", "label": "Week 10", "unit": "Garden Party / Click, Clack, Click!", "words": [{"word": "garden", "ipa": "/ˈgɑrdṇ/", "syllables": "<strong>gar</strong>-den", "speakParts": ["gar", "dun"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "d", "t": "c"}, {"c": "e", "t": "v"}, {"c": "n", "t": "c"}]}], "meaning": "花園 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "重音節 gar 為 r 控制音 /ɑr/；字尾 den 弱化為懶人音 /ə/。", "vowels": [{"letter": "a", "type": "special", "label": "r 控制音 /ɑr/", "desc": "重音節 ar 發捲舌音"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "plant", "ipa": "/plænt/", "syllables": "<strong>plant</strong>", "speakParts": ["plant"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "a", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "種植 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，a 發短母音 /æ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "閉音節短音"}]}, {"word": "building", "ipa": "/ˈbɪldɪŋ/", "syllables": "<strong>build</strong>-ing", "speakParts": ["bil", "ding"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "u", "t": "v"}, {"c": "i", "t": "v"}, {"c": "l", "t": "c"}, {"c": "d", "t": "c"}]}, {"stressed": false, "letters": [{"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "g", "t": "c"}]}], "meaning": "建築物 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 build 中 ui 發短母音 /ɪ/（u 不發音）；字尾 -ing 的 i 發短音 /ɪ/。", "vowels": [{"letter": "ui (特殊短音)", "type": "short", "label": "短母音 /ɪ/", "desc": "ui 特殊短音變化"}, {"letter": "i (第2個)", "type": "short", "label": "短母音 /ɪ/", "desc": "字尾 -ing 短音"}]}, {"word": "spot", "ipa": "/spɑt/", "syllables": "<strong>spot</strong>", "speakParts": ["spot"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "p", "t": "c"}, {"c": "o", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "斑點、發現 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，o 被子音夾住發短母音 /ɑ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɑ/", "desc": "閉音節短音"}]}, {"word": "brick", "ipa": "/brɪk/", "syllables": "<strong>brick</strong>", "speakParts": ["brick"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "c", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "磚塊 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，i 後面有 ck 關門，發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "help", "ipa": "/hɛlp/", "syllables": "<strong>help</strong>", "speakParts": ["help"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "e", "t": "v"}, {"c": "l", "t": "c"}, {"c": "p", "t": "c"}]}], "meaning": "幫忙 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，e 發短母音 /ɛ/。", "vowels": [{"letter": "e", "type": "short", "label": "短母音 /ɛ/", "desc": "閉音節短音"}]}, {"word": "neighbor", "ipa": "/ˈnebɚ/", "syllables": "<strong>neigh</strong>-bor", "speakParts": ["nay", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "n", "t": "c"}, {"c": "e", "t": "v"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}, {"c": "h", "t": "c"}]}, {"stressed": false, "letters": [{"c": "b", "t": "c"}, {"c": "o", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "鄰居 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音節 neigh 中，eigh 組合發長母音 A /e/；字尾 or 弱化為捲舌音 /ɚ/。", "vowels": [{"letter": "ei (eigh組合)", "type": "long", "label": "長母音 A /e/", "desc": "eigh 組合發長音 A"}, {"letter": "o", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 or 弱化捲舌音"}]}, {"word": "friend", "ipa": "/frɛnd/", "syllables": "<strong>friend</strong>", "speakParts": ["friend"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "e", "t": "v"}, {"c": "n", "t": "c"}, {"c": "d", "t": "c"}]}], "meaning": "朋友 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "特殊拼字！ie 組合在此不發長音，而是發短母音 E /ɛ/。", "vowels": [{"letter": "ie (特殊短音)", "type": "short", "label": "短母音 /ɛ/", "desc": "ie 特殊短音變化"}]}, {"word": "community", "ipa": "/kəˈmjunəti/", "syllables": "com-<strong>mu</strong>-ni-ty", "speakParts": ["kuh", "myoo", "nuh", "tee"], "displayParts": [{"stressed": false, "letters": [{"c": "c", "t": "c"}, {"c": "o", "t": "v"}, {"c": "m", "t": "c"}]}, {"stressed": true, "letters": [{"c": "m", "t": "c"}, {"c": "u", "t": "v"}]}, {"stressed": false, "letters": [{"c": "n", "t": "c"}, {"c": "i", "t": "v"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "y", "t": "v"}]}], "meaning": "社區 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "主重音在第二音節 mu（開音節），u 發長母音 U /ju/；字尾 y 發長音 E /i/。", "vowels": [{"letter": "o", "type": "schwa", "label": "懶人音 /ə/", "desc": "字首輕音節弱化"}, {"letter": "u", "type": "long", "label": "長母音 U /ju/", "desc": "主重音開音節長音 U"}, {"letter": "i", "type": "schwa", "label": "懶人音 /ə/", "desc": "輕音節弱化"}, {"letter": "y (半母音)", "type": "long", "label": "長母音 E /i/", "desc": "字尾 y 發長音 E"}]}, {"word": "near", "ipa": "/nɪr/", "syllables": "<strong>near</strong>", "speakParts": ["near"], "displayParts": [{"stressed": true, "letters": [{"c": "n", "t": "c"}, {"c": "e", "t": "v"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "在……附近 (prep.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ear 組合在此發 r 控制雙母音 /ɪr/。", "vowels": [{"letter": "ea", "type": "special", "label": "r 控制音 /ɪr/", "desc": "ear 組合發捲舌音"}]}]}, {"id": "w11", "label": "Week 11", "unit": "Garden Party / Click, Clack, Click!", "words": [{"word": "move", "ipa": "/muv/", "syllables": "<strong>move</strong>", "speakParts": ["move"], "displayParts": [{"stressed": true, "letters": [{"c": "m", "t": "c"}, {"c": "o", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "移動 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "o 在此發長音 U /u/，字尾 e 不發音。", "vowels": [{"letter": "o", "type": "long", "label": "長音 /u/", "desc": "特殊長音發 /u/"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "center", "ipa": "/ˈsɛntɚ/", "syllables": "<strong>cen</strong>-ter", "speakParts": ["sen", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "e", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "中心 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 cen 的 e 發短母音 /ɛ/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "e (第1個)", "type": "short", "label": "短母音 /ɛ/", "desc": "重音節閉音節短音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "meet", "ipa": "/mit/", "syllables": "<strong>meet</strong>", "speakParts": ["meet"], "displayParts": [{"stressed": true, "letters": [{"c": "m", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "遇見、集合 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "box", "ipa": "/bɑks/", "syllables": "<strong>box</strong>", "speakParts": ["box"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "o", "t": "v"}, {"c": "x", "t": "c"}]}], "meaning": "盒子、箱子 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節 CVC 結構，o 被子音夾住發短母音 /ɑ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɑ/", "desc": "閉音節短音"}]}, {"word": "wood", "ipa": "/wʊd/", "syllables": "<strong>wood</strong>", "speakParts": ["wood"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "o", "t": "v"}, {"c": "o", "t": "v"}, {"c": "d", "t": "c"}]}], "meaning": "木頭、木材 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "雙母音 oo 組合在此發短音 /ʊ/（與 good, book 相同）。", "vowels": [{"letter": "oo", "type": "short", "label": "短音 /ʊ/", "desc": "oo 短音組合"}]}, {"word": "beat", "ipa": "/bit/", "syllables": "<strong>beat</strong>", "speakParts": ["beat"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "e", "t": "v"}, {"c": "a", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "敲打、節拍 (v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音組合 ea 牽手，第一個母音 e 發長母音 E /i/，a 不發音。", "vowels": [{"letter": "ea", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "gourd", "ipa": "/gɔrd/", "syllables": "<strong>gourd</strong>", "speakParts": ["gourd"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "o", "t": "v"}, {"c": "u", "t": "v"}, {"c": "r", "t": "c"}, {"c": "d", "t": "c"}]}], "meaning": "葫蘆、瓜 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "our 組合在此發 r 控制捲舌音 /ɔr/。", "vowels": [{"letter": "ou", "type": "special", "label": "r 控制音 /ɔr/", "desc": "our 組合發捲舌音"}]}, {"word": "join", "ipa": "/dʒɔɪn/", "syllables": "<strong>join</strong>", "speakParts": ["join"], "displayParts": [{"stressed": true, "letters": [{"c": "j", "t": "c"}, {"c": "o", "t": "v"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}]}], "meaning": "加入、參加 (v.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "oi 屬於雙母音/滑音組合，發 /ɔɪ/（與 coin, point 相同）。", "vowels": [{"letter": "oi", "type": "special", "label": "雙母音 /ɔɪ/", "desc": "滑音組合"}]}, {"word": "instrument", "ipa": "/ˈɪnstrəmənt/", "syllables": "<strong>in</strong>-stru-ment", "speakParts": ["in", "struh", "munt"], "displayParts": [{"stressed": true, "letters": [{"c": "i", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "r", "t": "c"}, {"c": "u", "t": "v"}]}, {"stressed": false, "letters": [{"c": "m", "t": "c"}, {"c": "e", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "樂器、工具 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 in 的 i 發短母音 /ɪ/；中間 u 與字尾 ment 弱化為懶人音 /ə/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "主重音節閉音節短音"}, {"letter": "u", "type": "schwa", "label": "懶人音 /ə/", "desc": "中間輕音節弱化"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾 -ment 弱化"}]}, {"word": "clink", "ipa": "/klɪŋk/", "syllables": "<strong>clink</strong>", "speakParts": ["clink"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "發出叮噹聲 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，i 發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}]}, {"id": "w12", "label": "Week 12", "unit": "The Life Cycle of a Sun Flower", "words": [{"word": "buds", "ipa": "/bʌdz/", "syllables": "<strong>buds</strong>", "speakParts": ["buds"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "u", "t": "v"}, {"c": "d", "t": "c"}, {"c": "s", "t": "c"}]}], "meaning": "花蕾、嫩芽 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，u 被子音夾住發短母音 /ʌ/。", "vowels": [{"letter": "u", "type": "short", "label": "短母音 /ʌ/", "desc": "閉音節短音"}]}, {"word": "soil", "ipa": "/sɔɪl/", "syllables": "<strong>soil</strong>", "speakParts": ["soil"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "o", "t": "v"}, {"c": "i", "t": "v"}, {"c": "l", "t": "c"}]}], "meaning": "土壤 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "oi 屬於雙母音/滑音組合，發 /ɔɪ/（與 oil, join 相同）。", "vowels": [{"letter": "oi", "type": "special", "label": "雙母音 /ɔɪ/", "desc": "滑音組合"}]}, {"word": "stems", "ipa": "/stɛmz/", "syllables": "<strong>stems</strong>", "speakParts": ["stems"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "m", "t": "c"}, {"c": "s", "t": "c"}]}], "meaning": "莖、樹幹 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，e 發短母音 /ɛ/。", "vowels": [{"letter": "e", "type": "short", "label": "短母音 /ɛ/", "desc": "閉音節短音"}]}, {"word": "leaves", "ipa": "/livz/", "syllables": "<strong>leaves</strong>", "speakParts": ["leaves"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "e", "t": "v"}, {"c": "a", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "v"}, {"c": "s", "t": "c"}]}], "meaning": "葉子（leaf 的複數） (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ea 組合發長母音 E /i/；字尾 e 不發音。", "vowels": [{"letter": "ea", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}, {"letter": "e (字尾)", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "sunflower", "ipa": "/ˈsʌnˌflaʊɚ/", "syllables": "<strong>sun</strong>-flow-er", "speakParts": ["sun", "flou", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "u", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "f", "t": "c"}, {"c": "l", "t": "c"}, {"c": "o", "t": "v"}, {"c": "w", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "向日葵 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 sun 的 u 發短母音 /ʌ/；flow 的 ow 發雙母音 /aʊ/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "u", "type": "short", "label": "短母音 /ʌ/", "desc": "主重音節閉音節短音"}, {"letter": "ow", "type": "special", "label": "雙母音 /aʊ/", "desc": "滑音組合"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "life cycle", "ipa": "/laɪf ˈsaɪkḷ/", "syllables": "<strong>life</strong>-<strong>cy</strong>-cle", "speakParts": ["life", "sye", "kul"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "f", "t": "c"}, {"c": "e", "t": "v"}]}, {"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "y", "t": "v"}]}, {"stressed": false, "letters": [{"c": "c", "t": "c"}, {"c": "l", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "生命週期 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "life（CVCe）與 cy（開音節）皆發長母音 I /aɪ/；字尾 le 成音節，e 不發音。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "CVCe 長音 I"}, {"letter": "e (life)", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}, {"letter": "y (母音)", "type": "long", "label": "長母音 I /aɪ/", "desc": "重音開音節長音 I"}, {"letter": "e (cycle)", "type": "schwa", "label": "不發音", "desc": "字尾 le 成音節"}]}, {"word": "seeds", "ipa": "/sidz/", "syllables": "<strong>seeds</strong>", "speakParts": ["seeds"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "d", "t": "c"}, {"c": "s", "t": "c"}]}], "meaning": "種子 (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "plant", "ipa": "/plænt/", "syllables": "<strong>plant</strong>", "speakParts": ["plant"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "l", "t": "c"}, {"c": "a", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "植物 (*n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，a 發短母音 /æ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "閉音節短音"}]}, {"word": "grow", "ipa": "/gro/", "syllables": "<strong>grow</strong>", "speakParts": ["grow"], "displayParts": [{"stressed": true, "letters": [{"c": "g", "t": "c"}, {"c": "r", "t": "c"}, {"c": "o", "t": "v"}, {"c": "w", "t": "c"}]}], "meaning": "生長 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "ow 在字尾常發長母音 O /o/。", "vowels": [{"letter": "ow", "type": "long", "label": "長母音 O /o/", "desc": "字尾 ow 組合發長音 O"}]}, {"word": "water", "ipa": "/ˈwɔtɚ/", "syllables": "<strong>wa</strong>-ter", "speakParts": ["waw", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "水 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "wa 中的 a 受 w 影響發圓唇音 /ɔ/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "a", "type": "special", "label": "w 後圓唇音 /ɔ/", "desc": "wa 組合發 /wɔ/"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}]}, {"id": "w13", "label": "Week 13", "unit": "The Life Cycle of a Sun Flower", "words": [{"word": "sunlight", "ipa": "/ˈsʌnˌlaɪt/", "syllables": "<strong>sun</strong>-light", "speakParts": ["sun", "light"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "u", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}, {"c": "h", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "陽光 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 sun 的 u 發短母音 /ʌ/；light 中 igh 發長母音 I /aɪ/。", "vowels": [{"letter": "u", "type": "short", "label": "短母音 /ʌ/", "desc": "主重音節閉音節短音"}, {"letter": "i (igh組合)", "type": "long", "label": "長母音 I /aɪ/", "desc": "igh 組合發長音 I"}]}, {"word": "water", "ipa": "/ˈwɔtɚ/", "syllables": "<strong>wa</strong>-ter", "speakParts": ["waw", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "水 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "wa 中的 a 受 w 影響發圓唇音 /ɔ/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "a", "type": "special", "label": "w 後圓唇音 /ɔ/", "desc": "wa 組合發 /wɔ/"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "warmth", "ipa": "/wɔrmθ/", "syllables": "<strong>warmth</strong>", "speakParts": ["warmth"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "m", "t": "c"}, {"c": "t", "t": "c"}, {"c": "h", "t": "c"}]}], "meaning": "溫暖 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "war 組合中的 ar 發圓唇捲舌音 /ɔr/；字尾 th 發無聲 /θ/。", "vowels": [{"letter": "a", "type": "special", "label": "war 圓唇捲舌音 /ɔr/", "desc": "war 組合發 /wɔr/"}, {"letter": "th", "type": "special", "label": "子音 digraph /θ/", "desc": "無聲 th 咬舌音"}]}, {"word": "sprout", "ipa": "/spraʊt/", "syllables": "<strong>sprout</strong>", "speakParts": ["sprout"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "p", "t": "c"}, {"c": "r", "t": "c"}, {"c": "o", "t": "v"}, {"c": "u", "t": "v"}, {"c": "t", "t": "c"}]}], "meaning": "發芽、嫩芽 (v.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ou 組合發雙母音/滑音 /aʊ/（與 out, cloud 相同）。", "vowels": [{"letter": "ou", "type": "special", "label": "雙母音 /aʊ/", "desc": "滑音組合"}]}, {"word": "peek", "ipa": "/pik/", "syllables": "<strong>peek</strong>", "speakParts": ["peek"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "k", "t": "c"}]}], "meaning": "偷看、探出 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "branches", "ipa": "/ˈbræntʃɪz/", "syllables": "<strong>branch</strong>-es", "speakParts": ["branch", "iz"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "r", "t": "c"}, {"c": "a", "t": "v"}, {"c": "n", "t": "c"}, {"c": "c", "t": "c"}, {"c": "h", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "s", "t": "c"}]}], "meaning": "樹枝（複數） (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 branch 的 a 發短母音 /æ/（ch 發 /tʃ/）；字尾 es 發 /ɪz/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "重音節閉音節短音"}, {"letter": "ch", "type": "special", "label": "子音 digraph /tʃ/", "desc": "子音雙字母組合發 /tʃ/"}, {"letter": "e", "type": "short", "label": "短音 /ɪ/", "desc": "複數字尾 -es 弱化短音"}]}, {"word": "form", "ipa": "/fɔrm/", "syllables": "<strong>form</strong>", "speakParts": ["form"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "o", "t": "v"}, {"c": "r", "t": "c"}, {"c": "m", "t": "c"}]}], "meaning": "形成、形狀 (*v.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "or 屬於 r 控制母音組合，發捲舌音 /ɔr/。", "vowels": [{"letter": "o", "type": "special", "label": "r 控制音 /ɔr/", "desc": "or 組合發捲舌音"}]}, {"word": "fill", "ipa": "/fɪl/", "syllables": "<strong>fill</strong>", "speakParts": ["fill"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "i", "t": "v"}, {"c": "l", "t": "c"}, {"c": "l", "t": "c"}]}], "meaning": "裝滿、填滿 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，i 後面有雙子音 ll，發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "open", "ipa": "/ˈopən/", "syllables": "<strong>o</strong>-pen", "speakParts": ["oh", "pun"], "displayParts": [{"stressed": true, "letters": [{"c": "o", "t": "v"}]}, {"stressed": false, "letters": [{"c": "p", "t": "c"}, {"c": "e", "t": "v"}, {"c": "n", "t": "c"}]}], "meaning": "打開、開放的 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音在第一音節 o（開音節），直接發長母音 O /o/；字尾 en 弱化為懶人音 /ə/。", "vowels": [{"letter": "o", "type": "long", "label": "長母音 O /o/", "desc": "重音開音節長音 O"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "leaves", "ipa": "/livz/", "syllables": "<strong>leaves</strong>", "speakParts": ["leaves"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "e", "t": "v"}, {"c": "a", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "v"}, {"c": "s", "t": "c"}]}], "meaning": "樹葉（複數） (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ea 組合發長母音 E /i/；字尾 e 不發音。", "vowels": [{"letter": "ea", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}, {"letter": "e (字尾)", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}]}, {"id": "w14", "label": "Week 14", "unit": "Baby Animals Grow", "words": [{"word": "dolphin", "ipa": "/ˈdɑlfɪn/", "syllables": "<strong>dol</strong>-phin", "speakParts": ["dol", "fin"], "displayParts": [{"stressed": true, "letters": [{"c": "d", "t": "c"}, {"c": "o", "t": "v"}, {"c": "l", "t": "c"}]}, {"stressed": false, "letters": [{"c": "p", "t": "c"}, {"c": "h", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}]}], "meaning": "海豚 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 dol 的 o 發短母音 /ɑ/；ph 為子音 digraph 發 /f/；字尾 i 發短音 /ɪ/。", "vowels": [{"letter": "o", "type": "short", "label": "短母音 O /ɑ/", "desc": "重音節閉音節短音"}, {"letter": "ph", "type": "special", "label": "子音 digraph /f/", "desc": "子音雙字母組合發 /f/"}, {"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "輕音節閉音節短音"}]}, {"word": "calf", "ipa": "/kæf/", "syllables": "<strong>calf</strong>", "speakParts": ["calf"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "a", "t": "v"}, {"c": "l", "t": "c"}, {"c": "f", "t": "c"}]}], "meaning": "小牛、幼獸 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "al 組合在此 l 不發音，a 發短母音 /æ/（與 half 相同）。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "alf 組合中 l 不發音"}]}, {"word": "jaw", "ipa": "/dʒɔ/", "syllables": "<strong>jaw</strong>", "speakParts": ["jaw"], "displayParts": [{"stressed": true, "letters": [{"c": "j", "t": "c"}, {"c": "a", "t": "v"}, {"c": "w", "t": "c"}]}], "meaning": "下巴、顎 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "aw 組合發圓唇長音 /ɔ/（與 draw, saw 相同）。", "vowels": [{"letter": "aw", "type": "special", "label": "雙母音 /ɔ/", "desc": "aw 組合發圓唇音"}]}, {"word": "elephant", "ipa": "/ˈɛləfənt/", "syllables": "<strong>el</strong>-e-phant", "speakParts": ["el", "uh", "funt"], "displayParts": [{"stressed": true, "letters": [{"c": "e", "t": "v"}, {"c": "l", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}]}, {"stressed": false, "letters": [{"c": "p", "t": "c"}, {"c": "h", "t": "c"}, {"c": "a", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "大象 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "主重音 el 的 e 發短母音 /ɛ/；中間 e 與字尾 ant 弱化為懶人音 /ə/；ph 發 /f/。", "vowels": [{"letter": "e (第1個)", "type": "short", "label": "短母音 /ɛ/", "desc": "主重音節閉音節短音"}, {"letter": "e (第2個)", "type": "schwa", "label": "懶人音 /ə/", "desc": "中間輕音節弱化"}, {"letter": "ph", "type": "special", "label": "子音 digraph /f/", "desc": "子音雙字母組合發 /f/"}, {"letter": "a", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "herd", "ipa": "/hɝd/", "syllables": "<strong>herd</strong>", "speakParts": ["herd"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}, {"c": "d", "t": "c"}]}], "meaning": "獸群 (*n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "er 為 r 控制母音組合，發捲舌音 /ɝ/。", "vowels": [{"letter": "er", "type": "special", "label": "r 控制音 /ɝ/", "desc": "er 組合發捲舌音"}]}, {"word": "small", "ipa": "/smɔl/", "syllables": "<strong>small</strong>", "speakParts": ["small"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "m", "t": "c"}, {"c": "a", "t": "v"}, {"c": "l", "t": "c"}, {"c": "l", "t": "c"}]}], "meaning": "小的 (*adj.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "-all 組合中的 a 發圓唇長音 /ɔ/（與 ball, tall 相同）。", "vowels": [{"letter": "a", "type": "special", "label": "all 圓唇音 /ɔ/", "desc": "-all 組合發 /ɔl/"}]}, {"word": "parent", "ipa": "/ˈpɛrənt/", "syllables": "<strong>par</strong>-ent", "speakParts": ["pair", "unt"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "父母之一 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "重音節 par 中的 ar 在母音前發 /ɛr/；字尾 ent 弱化為懶人音 /ə/。", "vowels": [{"letter": "a", "type": "special", "label": "r 控制音 /ɛr/", "desc": "ar + 母音發 /ɛr/"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}, {"word": "fawn", "ipa": "/fɔn/", "syllables": "<strong>fawn</strong>", "speakParts": ["fawn"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "a", "t": "v"}, {"c": "w", "t": "c"}, {"c": "n", "t": "c"}]}], "meaning": "小鹿 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "aw 組合發圓唇長音 /ɔ/（與 lawn, dawn 相同）。", "vowels": [{"letter": "aw", "type": "special", "label": "雙母音 /ɔ/", "desc": "aw 組合發圓唇音"}]}, {"word": "born", "ipa": "/bɔrn/", "syllables": "<strong>born</strong>", "speakParts": ["born"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "o", "t": "v"}, {"c": "r", "t": "c"}, {"c": "n", "t": "c"}]}], "meaning": "出生的 (*adj.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "or 屬於 r 控制母音組合，發捲舌音 /ɔr/。", "vowels": [{"letter": "o", "type": "special", "label": "r 控制音 /ɔr/", "desc": "or 組合發捲舌音"}]}, {"word": "high", "ipa": "/haɪ/", "syllables": "<strong>high</strong>", "speakParts": ["high"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}, {"c": "h", "t": "c"}]}], "meaning": "高的、高地 (*adv.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "igh 組合中 gh 不發音，i 發長母音 I /aɪ/。", "vowels": [{"letter": "i (igh組合)", "type": "long", "label": "長母音 I /aɪ/", "desc": "igh 組合發長音 I"}]}]}, {"id": "w15", "label": "Week 15", "unit": "Baby Animals Grow", "words": [{"word": "chick", "ipa": "/tʃɪk/", "syllables": "<strong>chick</strong>", "speakParts": ["chick"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "h", "t": "c"}, {"c": "i", "t": "v"}, {"c": "c", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "小雞 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，i 後面有 ck 關門，發短母音 /ɪ/；字首 ch 發 /tʃ/。", "vowels": [{"letter": "ch", "type": "special", "label": "子音 digraph /tʃ/", "desc": "子音雙字母組合發 /tʃ/"}, {"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "warm", "ipa": "/wɔrm/", "syllables": "<strong>warm</strong>", "speakParts": ["warm"], "displayParts": [{"stressed": true, "letters": [{"c": "w", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "m", "t": "c"}]}], "meaning": "溫暖的 (*adj.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "war 組合中的 ar 發圓唇捲舌音 /ɔr/。", "vowels": [{"letter": "a", "type": "special", "label": "war 圓唇捲舌音 /ɔr/", "desc": "war 組合發 /wɔr/"}]}, {"word": "deep", "ipa": "/dip/", "syllables": "<strong>deep</strong>", "speakParts": ["deep"], "displayParts": [{"stressed": true, "letters": [{"c": "d", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "p", "t": "c"}]}], "meaning": "深的 (*adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "breath", "ipa": "/brɛθ/", "syllables": "<strong>breath</strong>", "speakParts": ["breath"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "r", "t": "c"}, {"c": "e", "t": "v"}, {"c": "a", "t": "v"}, {"c": "t", "t": "c"}, {"c": "h", "t": "c"}]}], "meaning": "呼吸 (n.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "特殊拼字！ea 在此不發長音，而是發短母音 E /ɛ/（與 bread, head 相同）；th 發 /θ/。", "vowels": [{"letter": "ea (特殊短音)", "type": "short", "label": "短母音 /ɛ/", "desc": "ea 特殊短音變化"}, {"letter": "th", "type": "special", "label": "子音 digraph /θ/", "desc": "無聲 th 咬舌音"}]}, {"word": "lose", "ipa": "/luz/", "syllables": "<strong>lose</strong>", "speakParts": ["lose"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "o", "t": "v"}, {"c": "s", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "失去、輸掉 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "o 在此發長音 U /u/，字尾 e 不發音。", "vowels": [{"letter": "o", "type": "long", "label": "長音 /u/", "desc": "特殊長音發 /u/"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "high", "ipa": "/haɪ/", "syllables": "<strong>high</strong>", "speakParts": ["high"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}, {"c": "h", "t": "c"}]}], "meaning": "高地、高處 (adv.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "igh 組合中 gh 不發音，i 發長母音 I /aɪ/。", "vowels": [{"letter": "i (igh組合)", "type": "long", "label": "長母音 I /aɪ/", "desc": "igh 組合發長音 I"}]}, {"word": "fly", "ipa": "/flaɪ/", "syllables": "<strong>fly</strong>", "speakParts": ["fly"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "l", "t": "c"}, {"c": "y", "t": "v"}]}], "meaning": "飛 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "單音節字尾 y 當母音使用，發長母音 I /aɪ/。", "vowels": [{"letter": "y (半母音)", "type": "long", "label": "長母音 I /aɪ/", "desc": "單音節字尾 y 發長音 I"}]}, {"word": "eagle", "ipa": "/ˈigḷ/", "syllables": "<strong>ea</strong>-gle", "speakParts": ["ee", "gul"], "displayParts": [{"stressed": true, "letters": [{"c": "e", "t": "v"}, {"c": "a", "t": "v"}]}, {"stressed": false, "letters": [{"c": "g", "t": "c"}, {"c": "l", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "老鷹 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音在第一音節 ea，雙母音 ea 發長母音 E /i/；字尾 le 成音節，e 不發音。", "vowels": [{"letter": "ea", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾 le 成音節"}]}, {"word": "hair", "ipa": "/hɛr/", "syllables": "<strong>hair</strong>", "speakParts": ["hair"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "a", "t": "v"}, {"c": "i", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "頭髮、毛髮 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "air 屬於 r 控制雙母音組合，發捲舌音 /ɛr/。", "vowels": [{"letter": "ai", "type": "special", "label": "r 控制音 /ɛr/", "desc": "air 組合發捲舌音"}]}, {"word": "parent", "ipa": "/ˈpɛrənt/", "syllables": "<strong>par</strong>-ent", "speakParts": ["pair", "unt"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "e", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "父母之一 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "重音節 par 中的 ar 在母音前發 /ɛr/；字尾 ent 弱化為懶人音 /ə/。", "vowels": [{"letter": "a", "type": "special", "label": "r 控制音 /ɛr/", "desc": "ar + 母音發 /ɛr/"}, {"letter": "e", "type": "schwa", "label": "懶人音 /ə/", "desc": "字尾輕音節弱化"}]}]}, {"id": "w16", "label": "Week 16", "unit": "Bigger Shoes for the Big Race", "words": [{"word": "big", "ipa": "/bɪg/", "syllables": "<strong>big</strong>", "speakParts": ["big"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}]}], "meaning": "大的 (*adj.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節 CVC 結構，i 被子音夾住發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "new", "ipa": "/nu/", "syllables": "<strong>new</strong>", "speakParts": ["new"], "displayParts": [{"stressed": true, "letters": [{"c": "n", "t": "c"}, {"c": "e", "t": "v"}, {"c": "w", "t": "c"}]}], "meaning": "新的 (*adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "ew 組合在此發長音 /u/（美式常讀 /nu/）。", "vowels": [{"letter": "ew", "type": "long", "label": "長音 /u/", "desc": "ew 組合發長音"}]}, {"word": "learn", "ipa": "/lɝn/", "syllables": "<strong>learn</strong>", "speakParts": ["learn"], "displayParts": [{"stressed": true, "letters": [{"c": "l", "t": "c"}, {"c": "e", "t": "v"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "n", "t": "c"}]}], "meaning": "學習 (v.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ear + 子音組合發 r 控制捲舌音 /ɝ/。", "vowels": [{"letter": "ea", "type": "special", "label": "r 控制音 /ɝ/", "desc": "ear + 子音發捲舌音"}]}, {"word": "fast", "ipa": "/fæst/", "syllables": "<strong>fast</strong>", "speakParts": ["fast"], "displayParts": [{"stressed": true, "letters": [{"c": "f", "t": "c"}, {"c": "a", "t": "v"}, {"c": "s", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "快的 (*adj.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，a 發短母音 /æ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "閉音節短音"}]}, {"word": "race", "ipa": "/res/", "syllables": "<strong>race</strong>", "speakParts": ["race"], "displayParts": [{"stressed": true, "letters": [{"c": "r", "t": "c"}, {"c": "a", "t": "v"}, {"c": "c", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "賽跑、比賽 (*n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "CVCe 無聲 e 結構，字尾 e 不發音，讓 a 發長母音 A /e/ 且 c 軟化為 /s/。", "vowels": [{"letter": "a", "type": "long", "label": "長母音 A /e/", "desc": "無聲 e 魔法發長音 A"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "Silent e 無聲幫手"}]}, {"word": "points", "ipa": "/pɔɪnts/", "syllables": "<strong>points</strong>", "speakParts": ["points"], "displayParts": [{"stressed": true, "letters": [{"c": "p", "t": "c"}, {"c": "o", "t": "v"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "t", "t": "c"}, {"c": "s", "t": "c"}]}], "meaning": "分數、點 (n.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "oi 屬於雙母音/滑音組合，發 /ɔɪ/（與 coin, voice 相同）。", "vowels": [{"letter": "oi", "type": "special", "label": "雙母音 /ɔɪ/", "desc": "滑音組合"}]}, {"word": "drink", "ipa": "/drɪŋk/", "syllables": "<strong>drink</strong>", "speakParts": ["drink"], "displayParts": [{"stressed": true, "letters": [{"c": "d", "t": "c"}, {"c": "r", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "k", "t": "c"}]}], "meaning": "喝 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "單音節閉音節，i 發短母音 /ɪ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "閉音節短音"}]}, {"word": "climb", "ipa": "/klaɪm/", "syllables": "<strong>climb</strong>", "speakParts": ["climb"], "displayParts": [{"stressed": true, "letters": [{"c": "c", "t": "c"}, {"c": "l", "t": "c"}, {"c": "i", "t": "v"}, {"c": "m", "t": "c"}, {"c": "b", "t": "c"}]}], "meaning": "攀爬 (v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "i 在 mb 前發長母音 I /aɪ/，字尾 b 不發音。", "vowels": [{"letter": "i", "type": "long", "label": "長母音 I /aɪ/", "desc": "特殊長音 I（字尾 b 不發音）"}]}, {"word": "enters", "ipa": "/ˈɛntɚz/", "syllables": "<strong>en</strong>-ters", "speakParts": ["en", "uhrz"], "displayParts": [{"stressed": true, "letters": [{"c": "e", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}, {"c": "s", "t": "c"}]}], "meaning": "進入 (v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 en 的 e 發短母音 /ɛ/；字尾 ters 弱化為捲舌音 /ɚz/。", "vowels": [{"letter": "e (第1個)", "type": "short", "label": "短母音 /ɛ/", "desc": "重音節閉音節短音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "shoes", "ipa": "/ʃuz/", "syllables": "<strong>shoes</strong>", "speakParts": ["shoes"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "h", "t": "c"}, {"c": "o", "t": "v"}, {"c": "e", "t": "v"}, {"c": "s", "t": "c"}]}], "meaning": "鞋子 (n.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "特殊拼字！oe 組合在此發長音 /u/；字首 sh 發 /ʃ/。", "vowels": [{"letter": "sh", "type": "special", "label": "子音 digraph /ʃ/", "desc": "子音雙字母組合發 /ʃ/"}, {"letter": "oe", "type": "long", "label": "長音 /u/", "desc": "特殊長音發 /u/"}]}]}, {"id": "w17", "label": "Week 17", "unit": "Bigger Shoes for the Big Race", "words": [{"word": "smart", "ipa": "/smɑrt/", "syllables": "<strong>smart</strong>", "speakParts": ["smart"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "m", "t": "c"}, {"c": "a", "t": "v"}, {"c": "r", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "聰明的 (adj.)", "category": "diphthong", "quizAnswer": "雙母音 / 滑音", "quizDesc": "ar 屬於 r 控制母音組合，發捲舌長音 /ɑr/。", "vowels": [{"letter": "a", "type": "special", "label": "r 控制音 /ɑr/", "desc": "ar 組合發捲舌音"}]}, {"word": "running", "ipa": "/ˈrʌnɪŋ/", "syllables": "<strong>run</strong>-ning", "speakParts": ["run", "ing"], "displayParts": [{"stressed": true, "letters": [{"c": "r", "t": "c"}, {"c": "u", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "n", "t": "c"}, {"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "g", "t": "c"}]}], "meaning": "跑步的 (adj.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 run 的 u 發短母音 /ʌ/；字尾 -ing 的 i 發短音 /ɪ/。", "vowels": [{"letter": "u", "type": "short", "label": "短母音 /ʌ/", "desc": "重音節閉音節短音"}, {"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "字尾 -ing 短音"}]}, {"word": "superfast", "ipa": "/ˈsupɚˌfæst/", "syllables": "<strong>su</strong>-per-fast", "speakParts": ["soo", "uhr", "fast"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "u", "t": "v"}]}, {"stressed": false, "letters": [{"c": "p", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}, {"stressed": false, "letters": [{"c": "f", "t": "c"}, {"c": "a", "t": "v"}, {"c": "s", "t": "c"}, {"c": "t", "t": "c"}]}], "meaning": "超快的 (adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "主重音 su（開音節）發長音 /u/；中間 per 為輕短捲舌音 /ɚ/；fast 的 a 發短音 /æ/。", "vowels": [{"letter": "u", "type": "long", "label": "長音 /u/", "desc": "主重音開音節長音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "r 控制捲舌音"}, {"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "閉音節短音"}]}, {"word": "need", "ipa": "/nid/", "syllables": "<strong>need</strong>", "speakParts": ["need"], "displayParts": [{"stressed": true, "letters": [{"c": "n", "t": "c"}, {"c": "e", "t": "v"}, {"c": "e", "t": "v"}, {"c": "d", "t": "c"}]}], "meaning": "需要 (*v.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 ee 組合發長母音 E /i/。", "vowels": [{"letter": "ee", "type": "long", "label": "長母音 E /i/", "desc": "雙母音組合發長音 E"}]}, {"word": "too", "ipa": "/tu/", "syllables": "<strong>too</strong>", "speakParts": ["too"], "displayParts": [{"stressed": true, "letters": [{"c": "t", "t": "c"}, {"c": "o", "t": "v"}, {"c": "o", "t": "v"}]}], "meaning": "也、太…… (*adv.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "雙母音 oo 組合在字尾發長音 /u/。", "vowels": [{"letter": "oo", "type": "long", "label": "長音 /u/", "desc": "oo 長音組合"}]}, {"word": "maybe", "ipa": "/ˈmebi/", "syllables": "<strong>may</strong>-be", "speakParts": ["may", "bee"], "displayParts": [{"stressed": true, "letters": [{"c": "m", "t": "c"}, {"c": "a", "t": "v"}, {"c": "y", "t": "v"}]}, {"stressed": false, "letters": [{"c": "b", "t": "c"}, {"c": "e", "t": "v"}]}], "meaning": "也許、可能 (adv.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音節 may 的 ay 發長母音 A /e/；字尾 be（開音節）的 e 發長母音 E /i/。", "vowels": [{"letter": "ay", "type": "long", "label": "長母音 A /e/", "desc": "雙母音組合發長音 A"}, {"letter": "e", "type": "long", "label": "長母音 E /i/", "desc": "字尾開音節長音 E"}]}, {"word": "smiling", "ipa": "/ˈsmaɪlɪŋ/", "syllables": "<strong>smil</strong>-ing", "speakParts": ["smile", "ing"], "displayParts": [{"stressed": true, "letters": [{"c": "s", "t": "c"}, {"c": "m", "t": "c"}, {"c": "i", "t": "v"}, {"c": "l", "t": "c"}]}, {"stressed": false, "letters": [{"c": "i", "t": "v"}, {"c": "n", "t": "c"}, {"c": "g", "t": "c"}]}], "meaning": "微笑的 (adj.)", "category": "long", "quizAnswer": "長母音", "quizDesc": "重音節 smil 的 i 發長母音 I /aɪ/；字尾 -ing 的 i 發短音 /ɪ/。", "vowels": [{"letter": "i (第1個)", "type": "long", "label": "長母音 I /aɪ/", "desc": "重音開音節長音 I"}, {"letter": "i (第2個)", "type": "short", "label": "短母音 /ɪ/", "desc": "字尾 -ing 短音"}]}, {"word": "have", "ipa": "/hæv/", "syllables": "<strong>have</strong>", "speakParts": ["have"], "displayParts": [{"stressed": true, "letters": [{"c": "h", "t": "c"}, {"c": "a", "t": "v"}, {"c": "v", "t": "c"}, {"c": "e", "t": "s"}]}], "meaning": "有 (*v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "特殊字！字尾雖有 e（避免英文單字以 v 結尾），但 a 仍發短母音 /æ/。", "vowels": [{"letter": "a", "type": "short", "label": "短母音 /æ/", "desc": "特殊短音（字尾 v+e 規則）"}, {"letter": "e", "type": "schwa", "label": "不發音", "desc": "字尾無聲 e"}]}, {"word": "bigger", "ipa": "/ˈbɪgɚ/", "syllables": "<strong>big</strong>-ger", "speakParts": ["big", "uhr"], "displayParts": [{"stressed": true, "letters": [{"c": "b", "t": "c"}, {"c": "i", "t": "v"}, {"c": "g", "t": "c"}]}, {"stressed": false, "letters": [{"c": "g", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}]}], "meaning": "更大的 (*adj.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 big 的 i 發短母音 /ɪ/；字尾 er 為輕短捲舌音 /ɚ/。", "vowels": [{"letter": "i", "type": "short", "label": "短母音 /ɪ/", "desc": "重音節閉音節短音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}, {"word": "enters", "ipa": "/ˈɛntɚz/", "syllables": "<strong>en</strong>-ters", "speakParts": ["en", "uhrz"], "displayParts": [{"stressed": true, "letters": [{"c": "e", "t": "v"}, {"c": "n", "t": "c"}]}, {"stressed": false, "letters": [{"c": "t", "t": "c"}, {"c": "e", "t": "v"}, {"c": "r", "t": "c"}, {"c": "s", "t": "c"}]}], "meaning": "進入 (v.)", "category": "short", "quizAnswer": "短母音", "quizDesc": "重音節 en 的 e 發短母音 /ɛ/；字尾 ters 弱化為捲舌音 /ɚz/。", "vowels": [{"letter": "e (第1個)", "type": "short", "label": "短母音 /ɛ/", "desc": "重音節閉音節短音"}, {"letter": "er", "type": "special", "label": "r 控制音 /ɚ/", "desc": "字尾 er 輕短捲舌音"}]}]}];
+
+let currentWeekIndex = 0;
+let currentFilter = 'all';
+let speakTimer = null;
+
+function clearHighlights() {
+  document.querySelectorAll('.syl-box').forEach(el => el.classList.remove('active-speak'));
+}
+
+function speak(text, rate = 0.95) {
+  if (!('speechSynthesis' in window)) {
+    alert("您的瀏覽器不支援語音朗讀功能，建議使用 Chrome 或 Safari 開啟。");
+    return;
+  }
+  if (speakTimer) clearTimeout(speakTimer);
+  clearHighlights();
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = rate;
+  window.speechSynthesis.speak(utter);
+}
+
+function speakSinglePart(cardIdx, partIdx, text) {
+  if (!('speechSynthesis' in window)) return;
+  if (speakTimer) clearTimeout(speakTimer);
+  clearHighlights();
+  window.speechSynthesis.cancel();
+
+  const box = document.getElementById(`syl-${cardIdx}-${partIdx}`);
+  if (box) box.classList.add('active-speak');
+
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = 'en-US';
+  utter.rate = (text === 'uhr' || text === 'uht' || text === 'it') ? 0.65 : 0.45;
+  utter.onend = () => {
+    speakTimer = setTimeout(clearHighlights, 250);
+  };
+  window.speechSynthesis.speak(utter);
+}
+
+function speakSyllablesSync(cardIdx, parts, fullWord) {
+  if (!('speechSynthesis' in window)) return;
+  if (speakTimer) clearTimeout(speakTimer);
+  clearHighlights();
+  window.speechSynthesis.cancel();
+
+  let index = 0;
+  function speakNext() {
+    clearHighlights();
+    if (index < parts.length) {
+      const box = document.getElementById(`syl-${cardIdx}-${index}`);
+      if (box) box.classList.add('active-speak');
+
+      const utter = new SpeechSynthesisUtterance(parts[index]);
+      utter.lang = 'en-US';
+      const isLightTail = (parts[index] === 'uhr' || parts[index] === 'uht' || (parts[index] === 'it' && index === parts.length - 1));
+      utter.rate = isLightTail ? 0.65 : 0.45;
+      utter.onend = () => {
+        index++;
+        speakTimer = setTimeout(speakNext, isLightTail ? 220 : 350);
+      };
+      window.speechSynthesis.speak(utter);
+    } else {
+      parts.forEach((_, pIdx) => {
+        const box = document.getElementById(`syl-${cardIdx}-${pIdx}`);
+        if (box) box.classList.add('active-speak');
+      });
+      speakTimer = setTimeout(() => {
+        const fullUtter = new SpeechSynthesisUtterance(fullWord);
+        fullUtter.lang = 'en-US';
+        fullUtter.rate = 0.55;
+        fullUtter.onend = () => {
+          speakTimer = setTimeout(clearHighlights, 350);
+        };
+        window.speechSynthesis.speak(fullUtter);
+      }, 300);
+    }
+  }
+  speakNext();
+}
+
+function downloadSlowAudio(word) {
+  const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(word)}&tl=en&ttsspeed=0.24&client=tw-ob`;
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${word}_slow.mp3`;
+  a.target = '_blank';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function renderWeekNav() {
+  const nav = document.getElementById('weekNav');
+  nav.innerHTML = '';
+  weeksData.forEach((w, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'week-btn' + (idx === currentWeekIndex ? ' active' : '');
+    btn.innerHTML = `${w.label}<span>${w.unit}</span>`;
+    btn.onclick = () => selectWeek(idx);
+    nav.appendChild(btn);
+  });
+}
+
+function selectWeek(idx) {
+  currentWeekIndex = idx;
+  currentFilter = 'all';
+  document.querySelectorAll('.filter-chip').forEach((c, i) => {
+    c.classList.toggle('active', i === 0);
+  });
+
+  const week = weeksData[currentWeekIndex];
+  document.getElementById('currentUnitTitle').innerText = `${week.label}：${week.unit}`;
+  document.getElementById('currentWordCount').innerText = `共 ${week.words.length} 個單字`;
+
+  renderWeekNav();
+  renderCards();
+
+  if (document.getElementById('quiz').classList.contains('active')) {
+    startQuiz();
+  }
+}
+
+function renderCards() {
+  const grid = document.getElementById('wordGrid');
+  grid.innerHTML = '';
+
+  const wordsList = weeksData[currentWeekIndex].words;
+  const filtered = currentFilter === 'all' 
+    ? wordsList 
+    : wordsList.filter(item => item.category === currentFilter);
+
+  filtered.forEach((item, cardIdx) => {
+    const stageHtml = item.displayParts.map((part, pIdx) => {
+      const lettersHtml = part.letters.map(l => {
+        if (l.t === 'space') return `<span class="ch-space"></span>`;
+        let cls = 'ch-c';
+        if (l.t === 'v') cls = 'ch-v';
+        if (l.t === 's') cls = 'ch-s';
+        return `<span class="ch ${cls}">${l.c}</span>`;
+      }).join('');
+
+      const speakText = (item.speakParts[pIdx] || '').replace(/'/g, "\\'");
+      const sep = pIdx < item.displayParts.length - 1 ? '<span class="syl-sep">-</span>' : '';
+      return `<div id="syl-${cardIdx}-${pIdx}" class="syl-box ${part.stressed ? 'stressed' : ''}" onclick="speakSinglePart(${cardIdx}, ${pIdx}, '${speakText}')" title="點擊單獨聽此音節">${lettersHtml}</div>${sep}`;
+    }).join('');
+
+    const vowelsHtml = item.vowels.map(v => {
+      let badgeClass = 'badge-short';
+      if (v.type === 'long') badgeClass = 'badge-long';
+      if (v.type === 'schwa') badgeClass = 'badge-schwa';
+      if (v.type === 'special') badgeClass = 'badge-special';
+
+      return `
+        <div class="vowel-item">
+          <strong style="min-width:85px;">${v.letter}</strong>
+          <span class="badge ${badgeClass}">${v.label}</span>
+          <span style="color:#475569; font-size:0.98rem;">${v.desc}</span>
+        </div>
+      `;
+    }).join('');
+
+    const partsJson = JSON.stringify(item.speakParts).replace(/"/g, '&quot;');
+    const safeWord = item.word.replace(/'/g, "\\'");
+
+    const card = document.createElement('div');
+    card.className = 'word-card';
+    card.innerHTML = `
+      <div>
+        <div class="card-top">
+          <div>
+            <div class="word-title">${item.word}</div>
+          </div>
+          <div class="audio-btns">
+            <div class="audio-row">
+              <button class="speak-btn" onclick="speak('${safeWord}', 0.95)" title="正常速度">🔊 正常</button>
+              <button class="speak-btn slow" onclick="speak('${safeWord}', 0.3)" title="0.3倍超慢速拉長音">🐢 超慢速</button>
+            </div>
+            <div class="audio-row">
+              <button class="speak-btn syllable-btn" onclick="speakSyllablesSync(${cardIdx}, ${partsJson}, '${safeWord}')" title="一個音節一個音節拆開唸">✂️ 拆音節</button>
+              <button class="speak-btn dl-btn" onclick="downloadSlowAudio('${safeWord}')" title="開啟並下載慢速 MP3 音檔">📥 下載MP3</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="syllable-stage">
+          ${stageHtml}
+        </div>
+
+        <div class="ipa-meaning">
+          <span class="ipa">${item.ipa}</span>
+          <span class="meaning">${item.meaning}</span>
+        </div>
+      </div>
+      <div class="vowel-list">
+        ${vowelsHtml}
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function filterWords(category, btn) {
+  currentFilter = category;
+  document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards();
+}
+
+function switchTab(tabId, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  if (tabId === 'quiz') {
+    startQuiz();
+  }
+}
+
+let quizIndex = 0;
+let score = 0;
+let answered = false;
+const quizOptionsList = ["短母音", "長母音", "懶人音 /ə/", "雙母音 / 滑音"];
+
+function startQuiz() {
+  quizIndex = 0;
+  score = 0;
+  const week = weeksData[currentWeekIndex];
+  document.getElementById('qWeekLabel').innerText = `${week.label} (${week.unit})`;
+  document.getElementById('qTotal').innerText = week.words.length;
+  document.getElementById('qScore').innerText = score;
+  loadQuestion();
+}
+
+function loadQuestion() {
+  answered = false;
+  const wordsList = weeksData[currentWeekIndex].words;
+  const current = wordsList[quizIndex];
+  document.getElementById('qNum').innerText = quizIndex + 1;
+  document.getElementById('qWord').innerText = current.word;
+  document.getElementById('qFeedback').innerText = '';
+  document.getElementById('nextBtn').style.display = 'none';
+
+  const optsContainer = document.getElementById('qOptions');
+  optsContainer.innerHTML = '';
+
+  quizOptionsList.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'quiz-opt';
+    btn.innerText = opt;
+    btn.onclick = () => checkAnswer(opt, btn);
+    optsContainer.appendChild(btn);
+  });
+
+  speak(current.word, 0.9);
+}
+
+function speakCurrentQuiz(rate = 0.9) {
+  const wordsList = weeksData[currentWeekIndex].words;
+  speak(wordsList[quizIndex].word, rate);
+}
+
+function checkAnswer(selected, btn) {
+  if (answered) return;
+  answered = true;
+  const wordsList = weeksData[currentWeekIndex].words;
+  const current = wordsList[quizIndex];
+  const allBtns = document.querySelectorAll('.quiz-opt');
+
+  if (selected === current.quizAnswer) {
+    btn.classList.add('correct');
+    score += 10;
+    document.getElementById('qScore').innerText = score;
+    document.getElementById('qFeedback').innerHTML = `✅ 答對了！${current.quizDesc}`;
+    document.getElementById('qFeedback').style.color = '#15803d';
+  } else {
+    btn.classList.add('wrong');
+    allBtns.forEach(b => {
+      if (b.innerText === current.quizAnswer) b.classList.add('correct');
+    });
+    document.getElementById('qFeedback').innerHTML = `❌ 正確答案是「${current.quizAnswer}」。${current.quizDesc}`;
+    document.getElementById('qFeedback').style.color = '#b91c1c';
+  }
+
+  const nextBtn = document.getElementById('nextBtn');
+  nextBtn.style.display = 'inline-block';
+  nextBtn.innerText = quizIndex < wordsList.length - 1 ? '下一題 ➔' : '重新測驗 ↻';
+}
+
+function nextQuestion() {
+  const wordsList = weeksData[currentWeekIndex].words;
+  if (quizIndex < wordsList.length - 1) {
+    quizIndex++;
+    loadQuestion();
+  } else {
+    startQuiz();
+  }
+}
+
+selectWeek(0);
+</script>
+</body>
+</html>
